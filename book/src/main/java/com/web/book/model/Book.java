@@ -3,11 +3,11 @@ package com.web.book.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="book")
+@Table(name="books")
 public class Book {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id;
     private String bookName;
 
